@@ -1,0 +1,22 @@
+{
+  "name": "XRGcSDKPods",
+  "version": "0.1.0",
+  "summary": "A short description of XRGcSDKPods.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rayraychow/XRGcSDKPods",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rayraychow": "352807106@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/rayraychow/XRGcSDKPods.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "XRGcSDKPods/Classes/**/*"
+}

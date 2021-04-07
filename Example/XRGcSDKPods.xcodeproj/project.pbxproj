@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EB94EA8637F6AAB37590FB8 /* XRGcSDKPods.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XRGcSDKPods.podspec; path = ../XRGcSDKPods.podspec; sourceTree = "<group>"; };
+		0EB94EA8637F6AAB37590FB8 /* XRGcSDKPods.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XRGcSDKPods.podspec; path = ../XRGcSDKPods.podspec; sourceTree = "<group>"; };
 		1F4A792D6EB794639E5700C0 /* Pods_XRGcSDKPods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRGcSDKPods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		385AD4C8978B6E81386D01C0 /* Pods-XRGcSDKPods_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRGcSDKPods_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XRGcSDKPods_Tests/Pods-XRGcSDKPods_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		46587E28BBFD9A8548F73D32 /* Pods-XRGcSDKPods_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRGcSDKPods_Example.release.xcconfig"; path = "Target Support Files/Pods-XRGcSDKPods_Example/Pods-XRGcSDKPods_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		79FA4DA6088A0E85CE5EAE0B /* Pods-XRGcSDKPods_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRGcSDKPods_Example.debug.xcconfig"; path = "Target Support Files/Pods-XRGcSDKPods_Example/Pods-XRGcSDKPods_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA01029D7B7C16B3F48A3FD4 /* Pods-XRGcSDKPods_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRGcSDKPods_Tests.release.xcconfig"; path = "Target Support Files/Pods-XRGcSDKPods_Tests/Pods-XRGcSDKPods_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B744B3F52F516B1144C6C45D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D28643978C3CDF45B09F7CE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B744B3F52F516B1144C6C45D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D28643978C3CDF45B09F7CE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D40895FA982AAC0CD895847F /* Pods_XRGcSDKPods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRGcSDKPods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				385AD4C8978B6E81386D01C0 /* Pods-XRGcSDKPods_Tests.debug.xcconfig */,
 				AA01029D7B7C16B3F48A3FD4 /* Pods-XRGcSDKPods_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,10 +497,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XRGcSDKPods/XRGcSDKPods-Prefix.pch";
 				INFOPLIST_FILE = "XRGcSDKPods/XRGcSDKPods-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,10 +515,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XRGcSDKPods/XRGcSDKPods-Prefix.pch";
 				INFOPLIST_FILE = "XRGcSDKPods/XRGcSDKPods-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
