@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'XRGcSDKPods_Example' do
+  pod 'XRGcSDKPods', :path => '../'
+
+  target 'XRGcSDKPods_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
